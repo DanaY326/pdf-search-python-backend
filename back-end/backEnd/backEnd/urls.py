@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from vectorSearch import views
+from pdfData import views
 
 urlpatterns = [
-    path('', views.index, name="vectorSearch"),
+    path('', views.index, name="pdfData"),
     path('del/<str:item_id>', views.remove, name="del"),
     path('admin/', admin.site.urls),
 ]
